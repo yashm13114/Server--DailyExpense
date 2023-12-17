@@ -40,7 +40,7 @@ app.get("*", function(req, res) {
     res.sendFile(path.join(__dirname, "./Frontend/dist/index.html"));
 });
 mongoose
-// .connect("mongodb+srv://yash:jOhfBi3986fmdSAM@cluster0.uqlowxi.mongodb.net/ExpenseTracker")
+
     .connect("mongodb+srv://yashm13114:sh5VlCTZNnkShVVP@cluster0.lgqyj4p.mongodb.net/DailyExpenseTracker")
     .then(() => {
         console.log("Connected to mongo");
